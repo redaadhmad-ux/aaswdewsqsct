@@ -3,79 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ethical Multimedia GH - premium event and multimedia experiences for weddings, corporate functions, and celebrations." />
-  <title>Ethical Multimedia GH | Premium Event Experiences</title>
+  <meta name="description" content="Ethical Multimedia GH - premium event and multimedia services for weddings, corporate events, and celebrations." />
+  <title>Ethical Multimedia GH</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="logo" href="/">Ethical <span>Multimedia GH</span></a>
-      <button class="menu-btn" aria-label="Open navigation">☰</button>
-      <nav class="nav-links">
-        <a href="/index.html" class="active">Home</a>
-        <a href="/services.html">Services</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/social.html">Social Hub</a>
-      </nav>
-    </div>
-  </header>
+  <div id="root"></div>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="kicker">Elegant Events • Professional Delivery</p>
-          <h1>Where unforgettable celebrations meet multimedia excellence.</h1>
-          <p class="lead">From live band performances to premium catering, decor design, and multimedia production, we craft complete event experiences for weddings, private celebrations, and corporate functions.</p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="/contact.html">Book Your Date</a>
-            <a class="btn btn-secondary" href="/services.html">Explore Services</a>
-          </div>
-        </div>
-        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1200&q=75" alt="Premium evening event setup with lights and guests" loading="eager" />
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2>Our Signature Services</h2>
-        <div class="grid-3">
-          <article class="card service-card"><span class="tag band">Live Band</span><h3>Dynamic Live Music</h3><p>Curated performance sets for weddings, receptions, and executive galas.</p></article>
-          <article class="card service-card"><span class="tag catering">Catering</span><h3>Culinary Experiences</h3><p>Elegant dining and buffet presentation with smooth service flow and quality menus.</p></article>
-          <article class="card service-card"><span class="tag multimedia">Multimedia</span><h3>Production & Coverage</h3><p>Audio-visual setup, event capture, and post-production assets for your brand story.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container grid-2">
-        <img src="https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=1200&q=75" alt="Live band performance on stage" loading="lazy" />
-        <div>
-          <h2>Designed for premium moments.</h2>
-          <p>We blend music, hospitality, decor, and multimedia into one coordinated experience. Every detail is styled with intention and executed with professionalism.</p>
-          <a class="btn btn-outline" href="/about.html">Discover Our Approach</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container cta">
-        <h2>Planning an event in Ghana?</h2>
-        <p>Let Ethical Multimedia GH deliver a polished, memorable experience from concept to completion.</p>
-        <a class="btn btn-primary" href="/contact.html">Request a Consultation</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div><strong>Ethical Multimedia GH</strong><p>Premium event and multimedia services for modern celebrations.</p></div>
-      <div><strong>Pages</strong><p><a href="/services.html">Services</a> · <a href="/about.html">About</a> · <a href="/contact.html">Contact</a></p></div>
-      <div><strong>Social</strong><p><a href="/social.html">Visit Social Hub</a></p></div>
-    </div>
-  </footer>
-  <script src="/script.js" defer></script>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" data-presets="react" src="/app.jsx"></script>
 </body>
 </html>

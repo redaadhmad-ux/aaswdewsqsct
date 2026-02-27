@@ -1,30 +1,36 @@
 # Ethical Multimedia GH Website
 
-Professional, modern, and lightweight multi-page website for **Ethical Multimedia GH** with a secure contact workflow.
+Professional, modern, and lightweight website for **Ethical Multimedia GH** built with a **React JSX frontend** and a secure Node.js backend.
 
-## Features
-- Required pages: Home, Services, About, Contact, Social Hub.
-- Premium visual direction with brand color system.
-- Responsive layout for mobile/tablet/desktop.
-- Secure contact endpoint with:
-  - Basic anti-spam honeypot
-  - Input validation and sanitization
-  - Rate limiting by client IP
-  - Persistent submission storage (`data/contact-submissions.ndjson`)
-  - Email notification via local `sendmail` when configured
+## What is included
+- React JSX single-page frontend (`public/app.jsx`) with page views for:
+  - Homepage
+  - Services (Live Band, Catering, Decor, Multimedia)
+  - About Us (Who We Are, What We Do)
+  - Contact
+  - Social Hub
+- Premium responsive design in `public/styles.css` using the brand colors.
+- Secure contact API (`POST /api/contact`) with:
+  - Input sanitization + validation
+  - Honeypot anti-spam
+  - Rate limiting
+  - Security headers
+  - Submission storage in `data/contact-submissions.ndjson`
+  - Email notification via `sendmail` (fallback to `data/email-outbox.log`)
 
 ## Run locally
 ```bash
 npm start
 ```
-Then open `http://localhost:3000`.
+Open: `http://localhost:3000`
 
-## Email setup
-Set environment variables before starting:
-
+## Optional email env vars
 ```bash
 export CONTACT_TO_EMAIL="bookings@example.com"
 export CONTACT_FROM_EMAIL="no-reply@example.com"
 ```
 
-If `sendmail` or env vars are unavailable, notifications are saved to `data/email-outbox.log`.
+## Create a downloadable ZIP
+```bash
+zip -r ethical-multimedia-gh.zip . -x ".git/*" "node_modules/*"
+```
